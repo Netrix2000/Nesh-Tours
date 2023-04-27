@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/CSS/login.css">
 </head>
 <body>
     <div class="login">
         <h1>Login Here</h1>
         <hr>
-        <form action="get">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password" required><br>
-            <button>LOGIN</button>
-            <p class="p1">Do not have an Account? <a href="signup.html">Sign Up </a></p>
+        <form action="connect.php" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button><a href="/index.html">LOGIN</a></button>
+            <p class="p1">Do not have an Account? <a href="/signup.html">Sign Up </a></p>
         </form>
     </div>
 </body>
